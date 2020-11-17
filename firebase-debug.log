@@ -1,0 +1,33 @@
+[debug] [2020-11-16T16:28:21.587Z] ----------------------------------------------------------------------
+[debug] [2020-11-16T16:28:21.589Z] Command:       /home/phawit/.nvm/versions/node/v14.15.0/bin/node /home/phawit/.nvm/versions/node/v14.15.0/bin/firebase deploy
+[debug] [2020-11-16T16:28:21.590Z] CLI Version:   8.16.2
+[debug] [2020-11-16T16:28:21.590Z] Platform:      linux
+[debug] [2020-11-16T16:28:21.590Z] Node Version:  v14.15.0
+[debug] [2020-11-16T16:28:21.590Z] Time:          Mon Nov 16 2020 23:28:21 GMT+0700 (Indochina Time)
+[debug] [2020-11-16T16:28:21.591Z] ----------------------------------------------------------------------
+[debug] [2020-11-16T16:28:21.591Z] 
+[debug] [2020-11-16T16:28:21.592Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2020-11-16T16:28:21.617Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-16T16:28:21.618Z] > authorizing via signed-in user
+[debug] [2020-11-16T16:28:21.618Z] [iam] checking project car-price-bbaa2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-16T16:28:21.620Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-16T16:28:21.620Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-16T16:28:21.759Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 16 Nov 2020 16:28:21 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-16T16:28:21.765Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/car-price-bbaa2:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-16T16:28:22.095Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 16 Nov 2020 16:28:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=202","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-16T16:28:22.100Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/car-price-bbaa2  
+ 
+[debug] [2020-11-16T16:28:22.362Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2020-11-16T16:28:22.363Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2020-11-16T16:28:22.484Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 16 Nov 2020 16:28:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'car-price-bbaa2'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-11-16T16:28:22.494Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/car-price-bbaa2/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-11-16T16:28:24.437Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 16 Nov 2020 16:28:24 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[car-price-bbaa2]: beginning deploy... 
+[info] i  hosting[car-price-bbaa2]: found 21 files in public 
